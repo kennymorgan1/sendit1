@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Delivery order</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="callout">
+            <p>User Logged on</p>
+        </div>
+    </div>
+    <header>
+        <div class="wrapper">
+			<a href="home.html"><img src="img/Logo.png " class="logo" alt="sendit"></a>
+            <p>SendIT</p>
+        </div>
+	
+		<nav>
+			<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="profile.html">Profile</a></li>
+			<li class="active"><a href="order.html">Deliver</a></li>
+			<li><a href="#">About</a></li>
+			</ul>
+		</nav>
+    </header>
+    <main>
+    <section id="main">
+        <div class="wrapper">
+        <article id="main-col">
+                <h1 class="page-title">Deliveries</h1>
+                <ul id="services">
+                    <li>
+                        <h3>Parcel 1234</h3>
+                        <p>Destination FCT</p>
+                        <p>Weight category: 101kg-200kg</p>
+                        <p>Pricing: #5,000</p>
+                        <p>status: Pending</p>
+                        <div class="edit">
+                            <ul>
+                                <li><button class="button_2">Edit</button></li>
+                                <li><button class="button_3">Cancel</button></li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Parcel 234</h3>
+                        <p>Destination Rivers</p>
+                        <p>Weight category: 201kg-300kg</p>
+                        <p>Pricing: #10,000</p>
+                        <p>status: Delivered on 25th September 2018</p>
+                    </li>
+                    <li>
+                            <h3>Parcel 124</h3>
+                            <p>Destination FCT</p>
+                            <p>Weight category: 1000kg-above</p>
+                            <p>Pricing: #50,000</p>
+                            <p>status: Delivered on 15th July 2018</p>
+                    </li>
+                </ul>
+            </article>
+            <aside id="sidebar">
+                <div class="blue">
+                <h3>Send a Parcel</h3>
+                <form class="send">
+                    <div>
+                        <label>Name</label><br>
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div>
+                        <label>Email</label><br>
+                        <input type="email" placeholder="Email Address">
+                    </div>
+                    <div>
+                        <label>Location</label><br>
+                        <select name="location" id="location">
+                        <option value="Abi" selected="selected">Abia</option>
+                        <option value="Ada">Adamawa</option>
+                        <option value="Akw">Akwa-Ibom</option>
+                        <option value="Ana">Anambra</option>
+                        <option value="Bau">Bauchi</option>
+                        <option value="Bay">Bayelsa</option>
+                        <option value="Ben">Benue</option>
+                        <option value="Bor">Borno</option>
+                        <option value="Cro">Cross River</option>
+                        <option value="Del">Delta</option>
+                        <option value="Ebo">Ebonyi</option>
+                        <option value="Edo">Edo</option>
+                        <option value="Eki">Ekiti</option>
+                        <option value="Enu">Enugu</option>
+                        <option value="Gom">Gombe</option>
+                        <option value="Imo">Imo</option>
+                        <option value="Jig">Jigawa</option>
+                        <option value="Kad">Kaduna</option>
+                        <option value="Kan">Kano</option>
+                        <option value="Kas">Kastina</option>
+                        <option value="Keb">Kebbi</option>
+                        <option value="Kog">Kogi</option>
+                        <option value="Kwa">Kwara</option>
+                        <option value="Lag">Lagos</option>
+                        <option value="Nas">Nasarawa</option>
+                        <option value="Nig">Niger</option>
+                        <option value="Ogu">Ogun</option>
+                        <option value="Ond">Ondo</option>
+                        <option value="Osu">Osun</option>
+                        <option value="Oyo">Oyo</option>
+                        <option value="Pla">Plateau</option>
+                        <option value="Riv">Rivers</option>
+                        <option value="Soc">Sokoto</option>
+                        <option value="Tar">Taraba</option>
+                        <option value="Yobe">Yobe</option>
+                        <option value="Zam">Zamfara</option>
+                        <option value="Fct">FCT</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Parcel No</label><br>
+                        <input type="text" placeholder="Parcel No">
+                    </div>
+                    <div>
+                        <label>Weight Category</label><br>
+                        <select name="location" id="location" >
+                        <option value="cat1" selected="selected">1kg-100kg</option>
+                        <option value="cat2">101kg-200kg</option>
+                        <option value="cat3">201kg-300kg</option>
+                        <option value="cat4">301kg-400kg</option>
+                        <option value="cat5">401kg-500kg</option>
+                        <option value="cat6">501kg-600kg</option>
+                        <option value="cat7">601kg-700kg</option>
+                        <option value="cat8">701kg-800kg</option>
+                        <option value="cat9">801kg-900kg</option>
+                        <option value="cat10">901kg-1000kg</option>
+                        <option value="cat11">1000kg-above</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Destination</label><br>
+                        <select name="Destination" id="location">
+                        <option value="Abi" selected="selected">Abia</option>
+                        <option value="Ada">Adamawa</option>
+                        <option value="Akw">Akwa-Ibom</option>
+                        <option value="Ana">Anambra</option>
+                        <option value="Bau">Bauchi</option>
+                        <option value="Bay">Bayelsa</option>
+                        <option value="Ben">Benue</option>
+                        <option value="Bor">Borno</option>
+                        <option value="Cro">Cross River</option>
+                        <option value="Del">Delta</option>
+                        <option value="Ebo">Ebonyi</option>
+                        <option value="Edo">Edo</option>
+                        <option value="Eki">Ekiti</option>
+                        <option value="Enu">Enugu</option>
+                        <option value="Gom">Gombe</option>
+                        <option value="Imo">Imo</option>
+                        <option value="Jig">Jigawa</option>
+                        <option value="Kad">Kaduna</option>
+                        <option value="Kan">Kano</option>
+                        <option value="Kas">Kastina</option>
+                        <option value="Keb">Kebbi</option>
+                        <option value="Kog">Kogi</option>
+                        <option value="Kwa">Kwara</option>
+                        <option value="Lag">Lagos</option>
+                        <option value="Nas">Nasarawa</option>
+                        <option value="Nig">Niger</option>
+                        <option value="Ogu">Ogun</option>
+                        <option value="Ond">Ondo</option>
+                        <option value="Osu">Osun</option>
+                        <option value="Oyo">Oyo</option>
+                        <option value="Pla">Plateau</option>
+                        <option value="Riv">Rivers</option>
+                        <option value="Soc">Sokoto</option>
+                        <option value="Tar">Taraba</option>
+                        <option value="Yobe">Yobe</option>
+                        <option value="Zam">Zamfara</option>
+                        <option value="Fct">FCT</option>
+                        </select>
+                    </div>
+                    <button class="button_1" type="submit">Send</button>
+                </form>
+                </div>
+            </aside>
+        </div>
+    </section>
+    <section id="sm">
+            <div class="wrapper">
+                <div class="box">
+                    <p><b>SendIT</b></p>
+                    <p><b>+234816659256</b><br>
+                        90 Mba Street Ajegunle<br>
+                        Lagos-Nigeria<br>
+                    wrgm@info.com</p>
+                </div>
+                <div class="box">
+                    <p>connect with us!</p>
+                    <ul>
+                        <li><a href="#"><img src="http://www.w3newbie.com/wp-content/uploads/facebook1.png"></a><li>
+                        <li><a href="#"><img src="http://www.w3newbie.com/wp-content/uploads/googleplus.png"></a><li>
+                        <li><a href="#"><img src="http://www.w3newbie.com/wp-content/uploads/twitter1.png"></a><li>
+                        <li><a href="#"><img src="http://www.w3newbie.com/wp-content/uploads/youtube1.png"></a><li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <img src="img/Logo.png" class="logo">
+                    <p class="logop">SendIT</p>
+                </div>
+            </div>
+        </section>
+        </main>
+        <footer>
+                <p>SendIT, copyright &copy: 2018</p>
+        </footer>
+    
+    </body>
+    </html>
