@@ -4,7 +4,8 @@
   "description": "An API for my SendIT app",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/test.js --timeout 1000 --compilers js:babel-core/register",
+    "test": "mocha test/**/*.js --timeout 1000 --compilers js:babel-core/register",
+    "prestart": "npm run test",
     "start": "nodemon app.js --exec babel-node --presets es2015",
     "lint": "esw src",
     "lint:watch": "npm run lint -- --watch",

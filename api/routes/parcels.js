@@ -16,7 +16,7 @@ router.get('/', (req, res,) => {
 router.get('/:parcelId', (req, res,) => {
     const parcel = parcels.find(c => c.parcelId === parseInt(req.params.parcelId));
     if (!parcel) res.status(404).send('The parcel with the given ID was not found');
-    res.send(parcel);
+    res.send(parcel).status(200);
 });
 
 router.post('/', (req, res) => {
@@ -41,7 +41,7 @@ router.put('/:parcelId/cancel', (req, res) => {
     if (!parcel) res.status(404).send('The parcel with the given ID was not found');
 
         parcel.status = 'cancelled'
-    res.send(parcel);
+    res.send(parcel).status(200);
 });
 
 
