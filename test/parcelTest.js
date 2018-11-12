@@ -61,16 +61,5 @@ describe('GET/:parcelid parcel', () => {
         });
     });
 
-// test the /PUT/:parcelId request
-describe('PUT/:parcelid parcel', () => {
-    it('it should UPDATE a parcel by the given id', (done) => {
-            chai.request(app)
-            .put('/api/v1/parcels/:parcelId/cancel')
-            .end((err, res) => {
-                res.should.have.status(404);
-                res.body.should.be.a('object');
-            done();
-            });
-        });
-    });
+
 });
