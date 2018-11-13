@@ -10,72 +10,69 @@ body {
 }
 
 .wrapper{
-    width: 100%;
+    width: 80%;
     margin: auto;
     overflow: hidden;
 }
 
 .callout{
-   width: 100%;
-   height: auto;
-   background:#ffc107;
-   overflow: hidden;
-}
-.callout p{
    text-align: right;
-   font-size: 13px;
-   padding: 0.1% 5% 0 0;
-   color: #f1f0d1;
+   font-size: 9px;
+   padding: 0;
 }
-.callout p a{
-   color: #f1f0d1;
-   text-decoration: none;
+.callout nav ul li a{
+    color: #fff;
 }
+.require{
+    float: right;
+}
+
 header{
-   width:100%;
-   min-height: 120px;
-   text-align: center;
+   padding-top:10px;
    margin-bottom: 0;
+   background: #094a89;
+   border-bottom: #fff 3px solid;
+   color: #fff;
+}
+
+header .icon{
+    float: left;
+    padding-left: 20px;
 }
 
 .logo{
-    width: 100px;
-    height: 70px;
-    padding: 5px;
+    width: 80px;
+    height: 50px;
     border-radius: 50%;
 }
-header p{
-   font-size: 32px;
-   padding: 0;
+header a{
+   font-size: 18px;
    margin-top: 0;
    font-style: sans sans-serif;
 }
 
-header nav{
-    width: 100%;
-    margin-bottom: 5px;
-    text-align: center;
+header li{
+    display: inline-block;
+    padding: 0 20px 0 20px;
 }
+
+header nav{
+    margin-top: 10px;
+    float: right;
+}
+
 header nav ul{
-   list-style: none;
-   margin: 0 auto;
-   padding-left: 0px;
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
 }
 header nav ul li a{
-   background: #2080ee;
-   display: block;
-   border: 1px solid#fff;
-   padding-top: 20px;
-   margin-left: 0 auto;
-   width: 100%;
-   text-align: center;
-   font-family: sans-serif;
-   height: 50px;
+    color: #fff;
 }
 
 header nav ul li a:hover, nav ul li.active a{
-    background-color: #1b1eeb;
-    color: #f2f2f2;
+    color: #111;
 }
 
 /**** Section****/
@@ -103,7 +100,7 @@ header nav ul li a:hover, nav ul li.active a{
 
 .box{
     width:100%;
-    background-color: #ffc107;
+    background-color: #111;
     color: #fff;
     text-align: center;
     margin-top: -20px;
@@ -116,6 +113,12 @@ header nav ul li a:hover, nav ul li.active a{
     margin-top: 0;
     font-style: sans sans-serif;
  }
+
+ .box_container{
+    width: 100%;
+    margin-top: 20px;
+    overflow: hidden;
+}
 
 .box ul{
     list-style: none;
@@ -134,32 +137,10 @@ footer{
     margin-top: -30px;
     padding: 5px;
     color: #ffffff;
-    background-color: #e8491d;
+    background-color: #111;
     text-align: center;
 }
-ul#services li{
-    list-style: none;
-    padding: 20px;
-    border: #cccccc solid 1px;
-    margin-bottom: 5px;
-    background: #c6e6e6;
-    overflow: hidden;
-}
-ul#services li .edit{
-    background: #fff;
-    border: 0;margin: 5px;
-}
-ul#services li .edit ul li{
-    padding: 0px;
-    float: left;
-    margin: 10px
-}
-ul#services li .edit ul li .button_2{
-    background: #adff2f;
-}
-ul#services li .edit ul li .button_3{
-    background: #ff0000;
-}
+
 article#main-col{
     margin-left: -50px;
 }
@@ -186,41 +167,53 @@ aside#sidebar .send input, aside#sidebar .send textarea, aside#sidebar .send sel
     margin-bottom: 10px;
     margin-right: 20px;
 }
+h1{
+    font-style: italic;
+    text-align: center;
+    color: #094a89;
+}
+.res-table{
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+table{
+    border-collapse: collapse;  
+    width: 100%;
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+}
+th{
+    background-color: #094a89;
+    color: white;
+}
+th,td{
+    border: 2px solid #ddd;
+    padding: 15px;
+}
 
 /*--------MEDIA!!!-------*/
-@media screen and (min-width: 650px){
-header{
-    text-align: center;
-}
+@media screen and (min-width: 850px){
 
-header nav ul{
-    padding-left: 20px;
+.content{
+    height: calc(100vh);
 }
-header nav ul li{
-	float: left;
-	border: 1px solid#fff;
-    width: 24%;
-    text-align: center;
-} 
 
 aside#sidebar{
-    float: right;
-    width: 30%;
+    text-align: center;
+    width: 50%;
     margin-top: 10px;
-    margin-left: 0px;
+    margin-left: 25%;
 }
 aside#sidebar .send input, aside#sidebar .send textarea, aside#sidebar .send select{
     width: 90%;
     padding: 5px
 }
-article#main-col{
-    float: left;
-    width: 65%;
-    margin-left: 0px;
-}
+
 #sm{
     margin-top: 20px;
-    background-color: #ffc107
+    background-color: #111;
+    height: 150px
 }
 #sm .box{
     float: left;
