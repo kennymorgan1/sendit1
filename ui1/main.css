@@ -1,0 +1,231 @@
+*{
+    text-decoration: none;
+}
+body {
+    font-family: verdana, tahoma, arial, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+}
+
+.wrapper{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.callout{
+   text-align: right;
+   font-size: 9px;
+   padding: 0;
+}
+.callout nav ul li a{
+    color: #fff;
+}
+.require{
+    float: right;
+}
+
+header{
+   padding-top:10px;
+   margin-bottom: 0;
+   background: #094a89;
+   border-bottom: #fff 3px solid;
+   color: #fff;
+}
+
+header .icon{
+    float: left;
+    padding-left: 20px;
+}
+
+.logo{
+    width: 80px;
+    height: 50px;
+    border-radius: 50%;
+}
+header a{
+   font-size: 18px;
+   margin-top: 0;
+   font-style: sans sans-serif;
+}
+
+header li{
+    display: inline-block;
+    padding: 0 20px 0 20px;
+}
+
+header nav{
+    margin-top: 10px;
+    float: right;
+}
+
+header nav ul{
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+}
+header nav ul li a{
+    color: #fff;
+}
+
+header nav ul li a:hover, nav ul li.active a{
+    color: #111;
+}
+
+/**** Section****/
+.content{
+    width: 100%;
+    background: url(img/Penguins.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh - 100px);
+    display: table;
+}
+
+.content h1{
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    font-weight: 900;
+    text-shadow: 2px 2px 8px #111;
+}
+
+.location{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.box{
+    width:100%;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    margin-top: -20px;
+    padding-top: 20px;
+}
+
+.logop{
+    font-size: 32px;
+    padding: 0;
+    margin-top: 0;
+    font-style: sans sans-serif;
+ }
+
+ .box_container{
+    width: 100%;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.box ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.box ul li{
+    display: inline;
+}
+.box ul li img{
+    height: 50px;
+}
+
+footer{
+    margin-top: -30px;
+    padding: 5px;
+    color: #ffffff;
+    background-color: #111;
+    text-align: center;
+}
+
+article#main-col{
+    margin-left: -50px;
+}
+aside#sidebar{
+    float: none;
+    text-align: center;
+    width: 100%;
+    margin-left: 10px;
+}
+aside#sidebar .send input, aside#sidebar .send textarea, aside#sidebar .send select{
+    width: 100%;
+    margin-bottom: 5px;
+}
+.right{
+    background: #808080;
+    text-align: center;
+    width: 100%;
+}       
+.blue{
+    padding: 15px;
+    background: #808080;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+h1{
+    font-style: italic;
+    text-align: center;
+    color: #094a89;
+}
+.res-table{
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+table{
+    border-collapse: collapse;  
+    width: 100%;
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+}
+th{
+    background-color: #094a89;
+    color: white;
+}
+th,td{
+    border: 2px solid #ddd;
+    padding: 15px;
+}
+
+/*--------MEDIA!!!-------*/
+@media screen and (min-width: 850px){
+
+.content{
+    height: calc(100vh);
+}
+
+aside#sidebar{
+    text-align: center;
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 25%;
+}
+aside#sidebar .send input, aside#sidebar .send textarea, aside#sidebar .send select{
+    width: 90%;
+    padding: 5px
+}
+
+#sm{
+    margin-top: 20px;
+    background-color: #111;
+    height: 150px
+}
+#sm .box{
+    float: left;
+    text-align: center;
+    width: 33%;
+    padding: 0px;    
+    margin-top: 0;
+    padding-top: 0;
+}
+footer{
+    margin-top: 0px
+}
+}
+
+
