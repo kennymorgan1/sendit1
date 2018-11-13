@@ -9,46 +9,6 @@ body{
     overflow: hidden;
 }
 
-header{
-    background:#ffc107;
-    color:#271313;
-    padding-top:30px;
-    min-height: 70px;
-    border-bottom: #3d160b 3px solid;
-}
-
-header a{
-    color:#1d0606;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-}
-header li{
-    display: inline;
-    padding: 0 20px 0 20px;
-}
-header #branding{
-    float: left;
-    font-size: 40px;
-    font-weight: 500;
-    margin-top: -20px;
-}
-header h1{
-    margin: 0;
-}
-header .callout{
-    float: right;
-    margin-top: 10px;
-}
-header .highlight, header .current a{
-    color: #e8491d;
-    font-weight: bold;
-}
-header a:hover{
-    color:#cccccc;
-    font-weight: bold;
-}
-
 .loginbox{
     margin-top: 100px;
     width: 350px;
@@ -131,51 +91,3 @@ h1{
     color:#ffc107;
 }
 
-.signupbox{
-    margin-top: 300px;
-    width: 350px;
-    height: 750px;
-    background: #2080ee;
-    color: #fff;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    box-sizing: border-box;
-}
-
-.SignupInput{
-
-    margin: 10px;
-}
-
-.signupbox input{
-    margin-bottom: 20px;
-    margin-right: 50px;
-    width: 100%;
-}
-
-.require{
-    float: right;
-}
-.signupbox input[type="email"], input[type="text"], input[type="password"]{
-    border: none;
-    width: 100%;
-    margin-right: 10px;
-    border-bottom: 1px solid #fff;
-    background: transparent;
-    outline: none;
-    height: 40px;
-    color: #fff;
-    font-size: 16px;
-}
-
-.signupbox input[type="submit"]{
-    border: none;
-    outline: none;
-    height: 40px;
-    background: #111;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 20px;  
-}

@@ -8,74 +8,106 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div class="wrapper">
-        <div class="callout">
-            <p>User Logged on</p>
-        </div>
-    </div>
-    <header>
+     <header>
         <div class="wrapper">
-			<a href="home.html"><img src="img/Logo.png " class="logo" alt="sendit"></a>
-            <p>SendIT</p>
-        </div>
-	
-		<nav>
-			<ul>
-			<li><a href="index.html">Home</a></li>
-			<li class="active"><a href="#">Profile</a></li>
-			<li><a href="order.html">Deliver</a></li>
-			<li><a href="#">About</a></li>
-			</ul>
-		</nav>
-    </header>
-    <main>
-    <section id="main">
-        <div class="wrapper">
-            <article id="main-col">
-                    <ul id="services">
-                            <li>
-                                <h3>Parcel 1234</h3>
-                                <p>Destination FCT</p>
-                                <p>Weight category: 101kg-200kg</p>
-                                <p>Pricing: #5,000</p>
-                                <p>status: Pending</p>
-                            </li>
-                            <li>
-                                <h3>Parcel 234</h3>
-                                <p>Destination Rivers</p>
-                                <p>Weight category: 201kg-300kg</p>
-                                <p>Pricing: #10,000</p>
-                                <p>status: Delivered on 25th September 2018</p>
-                            </li>
-                            <li>
-                                    <h3>Parcel 124</h3>
-                                    <p>Destination FCT</p>
-                                    <p>Weight category: 1000kg-above</p>
-                                    <p>Pricing: #50,000</p>
-                                    <p>status: Delivered on 15th July 2018</p>
-                            </li>
-                        </ul>
-                </article>
-                <aside id="sidebar">
-                    <div class="blue">
-                    <h1>No of parcels delivered</h1>
-                    <p> 10 parcels delivered</p>
-                    <h1>Pending Deliveries</h1>
-                    <p>2 parcels still on the way</p>
+            <div class="callout">
+                <p>User Logged on</p>
+            </div>
+            <div class="icon">
+                <a href="index.html"><img src="img/Logo.png " class="logo" alt="sendit"></a>
+                <p>Send<span class="highlight">IT</span></p>
+            </div>        
+            <nav>
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="order.html">Create Order</a></li>
+                </ul>
+            </nav>
+            </div>
+            </header>
+            <main>
+                <section id="main">
+                <div class="wrapper">
+                    <div class="res-table">
+                        <h1>Parcel Delivery Orders</h1>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>Paecel ID</th>
+                                    <th>Destination</th>
+                                    <th>Weight Category</th>
+                                    <th>Pricing</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                                <tr>
+                                    <td>1234</td>
+                                    <td>Lagos</td>
+                                    <td>101-200kg</td>
+                                    <td>#5,000</td>
+                                    <td>Pending</td>
+                                    <td><form>
+                                            <select name="action" id="action">
+                                            <option value="Cdest" selected="selected">Change Destination</option>
+                                            <option value="cancel">Cancel</option></td>
+                                </tr>
+                                <tr>
+                                    <td>1234</td>
+                                    <td>Lagos</td>
+                                    <td>101-200kg</td>
+                                    <td>#5,000</td>
+                                    <td>Pending</td>
+                                    <td><form>
+                                            <select name="action" id="action">
+                                            <option value="Cdest" selected="selected">Change Destination</option>
+                                            <option value="cancel">Cancel</option></td>
+                                </tr>
+                                <tr>
+                                    <td>1234</td>
+                                    <td>Lagos</td>
+                                    <td>101-200kg</td>
+                                    <td>#5,000</td>
+                                    <td>Pending</td>
+                                    <td><form>
+                                            <select name="action" id="action">
+                                            <option value="Cdest" selected="selected">Change Destination</option>
+                                            <option value="cancel">Cancel</option></td>
+                                </tr>
+                                <tr>
+                                    <td>1234</td>
+                                    <td>Lagos</td>
+                                    <td>101-200kg</td>
+                                    <td>#5,000</td>
+                                    <td>Pending</td>
+                                    <td><form>
+                                            <select name="action" id="action">
+                                            <option value="Cdest" selected="selected">Change Destination</option>
+                                            <option value="cancel">Cancel</option></td>
+                                </tr>
+                                <tr>
+                                    <td>1234</td>
+                                    <td>Lagos</td>
+                                    <td>101-200kg</td>
+                                    <td>#5,000</td>
+                                    <td>Pending</td>
+                                    <td><form>
+                                            <select name="action" id="action">
+                                            <option value="Cdest" selected="selected">Change Destination</option>
+                                            <option value="cancel">Cancel</option></td>
+                                </tr>        
+                            </tbody>
+                        </table>
                     </div>
-                </aside>
-        </div>
-
     </section>
-
     <section id="sm">
-        <div class="wrapper">
+        <div class="box_container"></div>
 			<div class="box">
-				<p><b>SendIT</b></p>
-				<p><b>+234816659256</b><br>
+				<p>SendIT</p>
+				<p>+234816659256<br>
 					90 Mba Street Ajegunle<br>
 					Lagos-Nigeria<br>
-				wrgm@info.com</p>
+				sendIT@info.com</p>
 			</div>
 			<div class="box">
 				<p>connect with us!</p>
@@ -87,8 +119,7 @@
 				</ul>
 			</div>
 			<div class="box">
-                <img src="img/Logo.png" class="logo">
-                <p class="logop">SendIT</p>
+                <P>We deliver to your desired destination</P>
             </div>
         </div>
     </section>
