@@ -15,7 +15,7 @@ describe('GET/ parcels', () => {
         .get('/api/v1/parcels')
         .end((err, res) => {
             res.should.have.status(200);
-            res.body.should.be.a('array');
+            res.body.should.be.a('object');
         done();
         });
     });
@@ -37,12 +37,6 @@ describe('POST/ parcels', () => {
             .end((err, res) => {
                 res.should.have.status(201);
                 res.body.should.be.a('object');
-                res.body.should.have.property('name');
-                res.body.should.have.property('email');
-                res.body.should.have.property('local');
-                res.body.should.have.property('category');
-                res.body.should.have.property('destination');
-                res.body.should.have.property('status');
             done();
         });
     });
