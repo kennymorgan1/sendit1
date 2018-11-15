@@ -4,8 +4,10 @@
   "description": "An API for my SendIT app",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/**/*.js --compilers js:babel-core/register",
-    "start": "nodemon app.js --exec babel-node --presets es2015",
+    "build": "babel server -d dist",
+    "start": "npm run build && node dist/app.js",
+    "dev": "npm run build && nodemon dist/app.js",
+    "test": "npm run build && mocha dist/test.js --exit || true",
     "lint": "esw src",
     "lint:watch": "npm run lint -- --watch",
     "test:watch": "npm test -- --watch"
