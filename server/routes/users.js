@@ -1,9 +1,9 @@
 import express from 'express';
-import usersController from '../controllers/users';
+import UsersController from '../controllers/users';
 
 const app = express();
 const router = express.Router();
 
-router.get('/:userId/parcels', usersController.users_get_all);
+router.get('/:userId/parcels', UsersController.usersGetAll);
 
 module.exports = router;

@@ -1,17 +1,15 @@
 import express from 'express';
-import parcelsController from '../controllers/parcels';
+import ParcelsController from '../controllers/parcels';
 
 const router = express.Router();
 
+router.get('/', ParcelsController.parcelsGetAll);
 
+router.get('/:parcelId', ParcelsController.parcelsGetById);
 
-router.get('/', parcelsController.parcelsGetAll);
+router.post('/', ParcelsController.parcelsPost);
 
-router.get('/:parcelId', parcelsController.parcelsGetById);
-
-router.post('/', parcelsController.parcelsPost);
-
-router.put('/:parcelId/cancel', parcelsController.parcelsPut);
+router.put('/:parcelId/cancel', ParcelsController.parcelsPut);
 
 
 module.exports = router;

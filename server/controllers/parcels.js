@@ -1,8 +1,5 @@
-const parcels = [
-    {parcelId: 1, name:'cargo1', email:'cargo1@sendit.com', local:'loc1', category:'cat1', destination:'dest1', status:'pending'},
-    {parcelId: 2, name:'cargo2', email:'cargo2@sendit.com', local:'loc2', category:'cat2', destination:'dest2', status:'pending'},
-    {parcelId: 3, name:'cargo3', email:'cargo3@sendit.com', local:'loc3', category:'cat3', destination:'dest3', status:'pending'}
-]
+import parcels from '../Data/data'
+
 class ParcelControllers { 
 
 static parcelsGetAll (req, res,) {
@@ -12,7 +9,7 @@ static parcelsGetAll (req, res,) {
 static parcelsGetById (req, res,) {
     const parcel = parcels.find(c => c.parcelId === parseInt(req.params.parcelId));
     if (!parcel) res.status(404).json({success:false, error:'The parcel with the given ID was not found'});
-    res.status(200).json({success:true, message:'parcel retrieved successfully', parcels});
+    res.status(200).json({success:true, message:'parcel retrieved successfully', parcel});
 }
 
 static parcelsPost (req, res) {
@@ -28,15 +25,15 @@ static parcelsPost (req, res) {
         destination: req.body.destination,
         status: "pending"
     };
-    this.parcels.push(parcel);
-    res.status(201).json({success:true, message:'parcel created successfully', parcels});
+    parcels.push(parcel);
+    res.status(201).json({success:true, message:'parcel created successfully', parcel});
 }
 
 static parcelsPut (req, res) {
     const parcel = parcels.find(c => c.parcelId === parseInt(req.params.parcelId));
     if (!parcel) res.status(404).json({success:false, error:'The parcel with the given ID was not found'});
         parcel.status = 'cancelled'
-    res.status(200).json({success:false, message:'updated succesfully', parcels});
+    res.status(200).json({success:false, message:'updated succesfully', parcel});
 }
 
 }
