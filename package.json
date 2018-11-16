@@ -7,8 +7,8 @@
     "build": "babel server -d dist",
     "start": "npm run build && node dist/app.js",
     "dev": "npm run build && nodemon dist/app.js",
-    "test": "npm run build && mocha dist/test.js --exit || true",
-    "lint": "esw src",
+    "test": "nyc npm run build && mocha dist/test.js --exit || true",
+    "lint": "eslint .",
     "lint:watch": "npm run lint -- --watch",
     "test:watch": "npm test -- --watch"
   },
@@ -41,5 +41,22 @@
     "joi": "^14.0.4",
     "mocha": "^5.2.0",
     "supertest": "^3.3.0"
+  },
+  "devDependencies": {
+    "nyc": "^13.1.0"
+  },
+  "nyc": {
+    "check-coverage": true,
+    "branches": 100,
+    "functions": 100,
+    "lines": 100,
+    "statements": 100,
+    "reporter": [
+      "text",
+      "lcov"
+    ],
+    "include": [
+    "server"
+    ]
   }
 }

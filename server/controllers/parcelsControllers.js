@@ -23,7 +23,8 @@ static parcelsPost (req, res) {
         local: req.body.local,
         category: req.body.category,
         destination: req.body.destination,
-        status: "pending"
+        status: "pending",
+        userId: Math.floor((Math.random() * 5) + 1)
     };
     parcels.push(parcel);
     res.status(201).json({success:true, message:'parcel created successfully', parcel});

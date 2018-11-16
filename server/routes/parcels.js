@@ -1,5 +1,5 @@
 import express from 'express';
-import ParcelsController from '../controllers/parcels';
+import ParcelsController from '../controllers/parcelsControllers';
 
 const router = express.Router();
 
@@ -12,4 +12,4 @@ router.post('/', ParcelsController.parcelsPost);
 router.put('/:parcelId/cancel', ParcelsController.parcelsPut);
 
 
-module.exports = router;
+export default router;
