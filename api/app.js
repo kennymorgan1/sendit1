@@ -1,6 +1,6 @@
 import express from 'express';
-import parcelRoutes from './api/routes/parcels';
-import userRoutes from './api/routes/users'
+import parcelRoutes from './routes/parcels';
+import userRoutes from './routes/users'
 import bodyParser from 'body-parser';
 
 const app = express();
