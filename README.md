@@ -1,5 +1,5 @@
 ## Welcome to GitHub Pages
-
+[![Build Status](https://travis-ci.com/kennymorgan1/iReporter.svg?branch=develop)](https://travis-ci.com/kennymorgan1/iReporter)
 You can use the [editor on GitHub](https://github.com/kennymorgan1/sendit1/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
