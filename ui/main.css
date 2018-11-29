@@ -21,6 +21,8 @@ header{
    background: #094a89;
    border-bottom: #fff 3px solid;
    color: #fff;
+   position: fixed;
+   width: 100%;
 }
 
 header .icon{

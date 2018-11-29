@@ -1,7 +1,7 @@
 import parcels from '../Data/data'
 
 class UsersControllers{
- static usersGetAll(req, res,){
+ static usersGetAll(req, res) {
     let user = parcels.filter((parcel) => {
         return parcel.userId === parseInt(req.params.userId);
     });

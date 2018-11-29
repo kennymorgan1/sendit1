@@ -2,11 +2,11 @@ import parcels from '../Data/data'
 
 class ParcelControllers { 
 
-static parcelsGetAll (req, res,) {
+static parcelsGetAll (req, res ) {
     res.json({success:true, message:'parcels retrieved successfully', parcels});
 }
 
-static parcelsGetById (req, res,) {
+static parcelsGetById (req, res) {
     const parcel = parcels.find(c => c.parcelId === parseInt(req.params.parcelId));
     if (!parcel) res.status(404).json({success:false, error:'The parcel with the given ID was not found'});
     res.status(200).json({success:true, message:'parcel retrieved successfully', parcel});
